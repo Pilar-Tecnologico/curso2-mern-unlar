@@ -1,4 +1,9 @@
-import { dbProducts, checkDB, getProductsByCategory } from './dbFunctions.js';
+import {
+	dbProducts,
+	checkDB,
+	getProductsByCategory,
+	categories,
+} from './dbFunctions.js';
 import { Capitalize, ReplaceCharacter } from './commonJs.js';
 checkDB();
 
@@ -7,24 +12,10 @@ const banner = $('.banner');
 const main_url = window.location.href;
 const category_list_ul = $('#category-list');
 
-const category_list = {
-	smartphones: ['devices', 'accessories'],
-	computers: ['microprocessors', 'motherboards', 'memory-ram', 'hard-drives'],
-	peripherals: [
-		'headphones',
-		'mouses',
-		'keyboards',
-		'monitors',
-		'external-memories',
-	],
-	cameras: ['digital-cameras', 'accessories'],
-	'consoles-and-games': ['consoles', 'videogames'],
-};
-
 function getCategories() {
-	let categories = main_url.split('=')[1];
-	categories = categories.split('/');
-	return categories;
+	let categoriesAux = main_url.split('=')[1];
+	categoriesAux = categoriesAux.split('/');
+	return categoriesAux;
 }
 
 const categoryFromURL = getCategories();
@@ -42,7 +33,9 @@ function showAllproducts() {
 		let component = `<div class="product" id="${
 			allProductsByMainCategory[index]['id']
 		}">
-    <a href="./product-page.html?id=${allProductsByMainCategory[index]['id']}"
+    <a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/product-page.html?id=${
+			allProductsByMainCategory[index]['id']
+		}"
         ><img
             src="${allProductsByMainCategory[index]['pictureUrl']}"
             alt="Imagen producto"
@@ -64,7 +57,7 @@ function showAllproducts() {
 }
 
 function setBreadCrumbs() {
-	let _category_list = category_list;
+	let _category_list = categories;
 	category_list_ul[0].innerHTML = '';
 
 	let mainCat = '';
@@ -77,12 +70,12 @@ function setBreadCrumbs() {
 		mainCat = categoryFromURL;
 	}
 	category_list_ul[0].innerHTML += `<li class="list-group-item c-item">
-	<a href="/products/category_prods.html?=${mainCat}">All</a>
+	<a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${mainCat}">All</a>
 </li>`;
 
 	_category_list.forEach((category) => {
 		let component = `<li class="list-group-item c-item">
-		<a href="/products/category_prods.html?=${
+		<a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${
 			mainCat + '/' + category
 		}">${Capitalize(category)}</a>
 	</li>`;
@@ -90,7 +83,7 @@ function setBreadCrumbs() {
 	});
 
 	banner[0].innerHTML = `<img
-	src="../img/Categories/${mainCat}/banner-2.webp"
+	src="https://pilar-tecnologico.github.io/curso2-mern-unlar/img/Categories/${mainCat}/banner-2.webp"
 	class="banner-img"
 	id="banner-img"
 	alt="..."

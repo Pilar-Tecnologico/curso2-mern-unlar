@@ -7,11 +7,11 @@ category_btns.forEach((category) => {
 		// console.log(btn.href);
 		let categories = formatCategories(btn.id);
 		if (categories.length > 1) {
-			btn.href = `../products/category_prods.html?=${
+			btn.href = `https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${
 				categories[0] + '/' + categories[1]
 			}`;
 		} else {
-			btn.href = `../products/category_prods.html?=${categories[0]}`;
+			btn.href = `https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${categories[0]}`;
 		}
 	});
 });

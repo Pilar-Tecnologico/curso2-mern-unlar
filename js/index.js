@@ -17,7 +17,7 @@ const new_productsDiv = document.getElementById('new-products');
 		const data = products[i];
 		const id = data[0];
 		const attributes = data[1];
-		var component = `<div class="product" id="${id}"><a href="./products/product-page.html?id=${id}"><img src="${attributes['pictureUrl']}" alt="Imagen producto"/></a></div>`;
+		var component = `<div class="product" id="${id}"><a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/product-page.html?id=${id}"><img src="${attributes['pictureUrl']}" alt="Imagen producto"/></a></div>`;
 		new_productsDiv.innerHTML += component;
 	}
 })();
@@ -30,7 +30,7 @@ const new_productsDiv = document.getElementById('new-products');
 		const data = products[i];
 		const id = data[0];
 		const attributes = data[1];
-		var component = `<div class="product" id="${id}"><a href="./products/product-page.html?id=${id}"><img src="${attributes['pictureUrl']}" alt="Imagen producto"/></a></div>`;
+		var component = `<div class="product" id="${id}"><a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/product-page.html?id=${id}"><img src="${attributes['pictureUrl']}" alt="Imagen producto"/></a></div>`;
 		best_productsDiv.innerHTML += component;
 	}
 })();

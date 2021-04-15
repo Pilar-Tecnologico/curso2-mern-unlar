@@ -1,6 +1,10 @@
 $(document).ready(function () {
-	$('#navbar-frame').load('../common/navbar.html');
-	$('.footer-frame').load('../common/footer.html');
+	$('#navbar-frame').load(
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/common/navbar.html'
+	);
+	$('.footer-frame').load(
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/common/footer.html'
+	);
 });
 
 function ReplaceCharacter(word = '', find_char, replacing_char) {

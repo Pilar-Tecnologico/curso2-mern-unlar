@@ -11,7 +11,9 @@ function checkDB() {
 }
 
 async function createLocalDB() {
-	await fetch('../DefaultDB.json')
+	await fetch(
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/DefaultDB.json'
+	)
 		.then((response) => response.json())
 		.then((data) => {
 			//Create Product Local DB

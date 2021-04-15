@@ -100,7 +100,8 @@ function loadPictureBox() {
 }
 
 function loadImages() {
-	let pictureUrl = '/img/Categories/';
+	let pictureUrl =
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/img/Categories/';
 
 	let index_1 = mainCategorySelectMenu[0].options.selectedIndex;
 	let mainSelection = mainCategorySelectMenu[0].options[index_1].innerHTML;
@@ -145,7 +146,9 @@ saveBtn.addEventListener('click', (e) => {
 	new_product.id = getIdAndIndex().id;
 
 	updateProduct(new_product, getIdAndIndex().index);
-	window.location.replace('/products/adminShowProduct.html');
+	window.location.replace(
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/products/adminShowProduct.html'
+	);
 });
 
 function arrangeSelectMainCategoryMenuV2() {

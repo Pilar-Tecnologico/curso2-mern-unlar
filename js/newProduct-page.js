@@ -1,5 +1,10 @@
 import { ProductModel } from './Product.js';
-import { checkDB, saveProduct, getAllProductsId } from './dbFunctions.js';
+import {
+	checkDB,
+	saveProduct,
+	getAllProductsId,
+	categories,
+} from './dbFunctions.js';
 import { Capitalize, ReplaceCharacter } from './commonJs.js';
 checkDB();
 const form = document.querySelector('form');
@@ -9,20 +14,6 @@ const selectPicture = document.getElementById('selectPicture');
 const submitBtn = document.querySelector('.btn-primary');
 const pictureSelector = $('.picture-selector');
 const selectedPicture = document.getElementById('selectedPicture');
-
-const categories = {
-	smartphones: ['devices', 'accessories'],
-	computers: ['microprocessors', 'motherboards', 'memory-ram', 'hard-drives'],
-	peripherals: [
-		'headphones',
-		'mouses',
-		'keyboards',
-		'monitors',
-		'external-memories',
-	],
-	cameras: ['digital-cameras', 'accessories'],
-	'consoles-and-games': ['consoles', 'videogames'],
-};
 
 //Cargamos el menu de Select, ni bien el documento terminó de cargar
 $(document).ready((e) => {
@@ -93,7 +84,8 @@ function loadPictureBox() {
 }
 
 function loadImages() {
-	let pictureUrl = '../img/categories/';
+	let pictureUrl =
+		'https://pilar-tecnologico.github.io/curso2-mern-unlar/img/categories/';
 
 	let index_1 = mainCategorySelect[0].options.selectedIndex;
 	let mainSelection = mainCategorySelect[0].options[index_1].innerHTML;

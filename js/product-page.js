@@ -60,10 +60,10 @@ function loadProductInfo() {
         </div>
     </div>
 </div>`;
-	breadcrum_mainCategory.href = `../products/category_prods.html?=${product.mainCategory}`;
+	breadcrum_mainCategory.href = `https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${product.mainCategory}`;
 	breadcrum_mainCategory.innerHTML = `${Capitalize(product.mainCategory)}`;
 	breadcrum_secondCategory.innerHTML = `${Capitalize(product.secondCategory)}`;
-	breadcrum_secondCategory.href = `../products/category_prods.html?=${
+	breadcrum_secondCategory.href = `https://pilar-tecnologico.github.io/curso2-mern-unlar/products/category_prods.html?=${
 		product.mainCategory + '/' + product.secondCategory
 	}`;
 	breadcrum_product.innerHTML = `${

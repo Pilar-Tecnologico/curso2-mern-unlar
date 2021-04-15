@@ -54,8 +54,8 @@ function fillData() {
 		var auxList = [];
 
 		let components = `<span class="icons">
-	<a href="/products/editProduct.html?=${product.id}&loc=${index}"><i class="fas fa-edit"></i></a>
-	<a href="/products/delete.html?=${product.id}&loc=${index}"
+	<a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/editProduct.html?=${product.id}&loc=${index}"><i class="fas fa-edit"></i></a>
+	<a href="https://pilar-tecnologico.github.io/curso2-mern-unlar/products/delete.html?=${product.id}&loc=${index}"
 		><i class="fas fa-trash" style="color: rgb(202, 69, 69)"></i
 	></a>
 </span>`;

@@ -13,4 +13,6 @@ const getIdAndIndex = () => {
 	return { id: auxId, index: auxIndex };
 };
 removeProductById(getIdAndIndex().id);
-window.location.replace('/products/adminShowProduct.html');
+window.location.replace(
+	'https://pilar-tecnologico.github.io/curso2-mern-unlar/products/adminShowProduct.html'
+);
