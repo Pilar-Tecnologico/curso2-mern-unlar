@@ -1,0 +1,153 @@
+.category-list {
+	display: flexbox;
+}
+.category-list a {
+	color: rgb(31, 31, 31);
+	text-decoration: none;
+}
+
+.banner {
+	width: 100%;
+	min-width: 400px;
+	height: 400px;
+	display: block;
+}
+.banner .banner-img {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.product {
+	display: flexbox;
+	width: 330px;
+	height: 500px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+.product a {
+	color: black;
+	text-decoration: none;
+}
+.product h4 {
+	font-weight: bold;
+}
+
+.product img {
+	width: 100%;
+	max-width: 100%;
+	height: 80%;
+	display: flexbox;
+	object-fit: scale-down;
+}
+
+.categories .product:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+#product-name {
+	margin-right: 10px;
+}
+#product-price {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.caracteristics-list {
+	margin-top: 50%;
+}
+.price-info {
+	border-left: 1px solid rgb(226, 226, 226);
+}
+
+h1.price {
+	font-weight: bold;
+	color: #0066cc;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.tags {
+	color: #db2843;
+	border: 1px solid #db2843;
+	border-radius: 2px;
+	width: fit-content;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+form img {
+	display: block;
+	width: 100%;
+	max-height: 20rem;
+	object-fit: scale-down;
+}
+
+.picture-selector {
+	display: none;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	grid-template-areas:
+		'img-1 img-2 img-3'
+		'img-4 img-5 img-6'
+		'img-7 img-8 img-9';
+	position: relative;
+	background-color: #f8f9fa;
+	min-width: 160px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.picture-selector img {
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+
+.selling-img {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+}
+.selling-img img {
+	width: 100%;
+	display: block;
+	object-fit: scale-down;
+}
+
+.img-1 {
+	grid-area: img-1;
+}
+.img-2 {
+	grid-area: img-2;
+}
+.img-3 {
+	grid-area: img-3;
+}
+.img-4 {
+	grid-area: img-4;
+}
+.img-5 {
+	grid-area: img-5;
+}
+.img-6 {
+	grid-area: img-6;
+}
+.img-7 {
+	grid-area: img-7;
+}
+.img-8 {
+	grid-area: img-8;
+}
+.img-9 {
+	grid-area: img-9;
+}
