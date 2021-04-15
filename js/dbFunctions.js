@@ -11,7 +11,7 @@ function checkDB() {
 }
 
 async function createLocalDB() {
-	await fetch('/curso-mern-unlar/DefaultDB.json')
+	await fetch('../DefaultDB.json')
 		.then((response) => response.json())
 		.then((data) => {
 			//Create Product Local DB

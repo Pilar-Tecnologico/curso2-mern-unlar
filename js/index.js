@@ -34,5 +34,3 @@ const new_productsDiv = document.getElementById('new-products');
 		best_productsDiv.innerHTML += component;
 	}
 })();
-
-// let a = `<div class="product" id="${index}"><a href="#"><img src="${dbProducts[index]['pictureUrl']}" alt="Imagen producto"/></a></div>`;

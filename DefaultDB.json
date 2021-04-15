@@ -12,10 +12,10 @@
 				"4 Back cameras 48Mpx/8Mpx/5Mpx/5Mpx",
 				"Processor MediaTek MT6768 Helio P65 Octa-Core de 2GHz with 4GB de RAM"
 			],
-			"description": "Awesome screen built for cinema\\\\r\\\\nImmerse yourself in the large 6.4-inch Infinity-U Display of Galaxy A31. A wide aspect ratio fills your screen with content from edge to edge. Watch your favorite videos, games and live streams in vivid FHD+ Super AMOLED.\\\\r\\\\nSlim on the outside, big on the inside\\\\r\\\\nEverything you want in a phone in a slim body. Housing a large 5,000mAh(typical) battery in the 8.6 mm-thick device, Galaxy A31 fits right in your hand and comes in a geometric design with a glossy finish. Choose from Prism Crush Black, Prism Crush White, or Prism Crush Blue.",
+			"description": "Awesome screen built for cinema\r\nImmerse yourself in the large 6.4-inch Infinity-U Display of Galaxy A31. A wide aspect ratio fills your screen with content from edge to edge. Watch your favorite videos, games and live streams in vivid FHD+ Super AMOLED.\r\nSlim on the outside, big on the inside\r\nEverything you want in a phone in a slim body. Housing a large 5,000mAh(typical) battery in the 8.6 mm-thick device, Galaxy A31 fits right in your hand and comes in a geometric design with a glossy finish. Choose from Prism Crush Black, Prism Crush White, or Prism Crush Blue.",
 			"mainCategory": "smartphones",
 			"secondCategory": "devices",
-			"pictureUrl": "http://localhost:5500/img/Categories/Smartphones/Devices/1.webp",
+			"pictureUrl": "http://localhost:5500/img/categories/smartphones/devices/1.webp",
 			"addedDate": 1618267734988,
 			"sells": 12
 		},
@@ -34,7 +34,7 @@
 			"description": "The Sony a7C is a compact full-frame mirrorless camera with a 24MP sensor and 5-axis image stabilization. It features the same hybrid autofocus system as higher-end models, with \"Real-time Tracking\" and Eye AF for both humans and animals. The camera can shoot bursts at 10 fps with autofocus.\r\n\r\nThe a7C captures over-sampled 4K footage at 30p (with a 1.2x crop) and 24p. It supports HLG and S-Log2/3, Slow & Quick motion, Full HD / 120 fps capture, and its AF system has been optimized for video. The camera has both 3.5mm microphone and headphone sockets.\r\n\r\nThe body has a sturdy built and is weather and dust resistant. The camera has a fully articulating touchscreen display and a 2.36M-dot electronic viewfinder. It uses the same NP-FZ100 battery as higher-end Alphas, and can shoot an estimated 680 photos with the viewfinder and 740 with the LCD. The camera can be charged over its USB Type C port.",
 			"mainCategory": "cameras",
 			"secondCategory": "digital_cameras",
-			"pictureUrl": "http://localhost:5500/img/Categories/Cameras/Digital-Cameras/4.webp",
+			"pictureUrl": "http://localhost:5500/img/categories/cameras/digital-cameras/4.webp",
 			"addedDate": 1618267975480,
 			"sells": 23
 		},
@@ -59,7 +59,7 @@
 			"description": "Powered by AMD Ryzen AM4 7th Generation Athlon and HD 2000 series processors to maximize connectivity and speed with NVMe M 2 support for 32GB of DDR4 USB 3 0 and Gigabit LAN\r\n5x Protection III Hardware-level safeguards provide component longevity and reliability\r\nPatent-pending SafeSlot Core fortified PCIe slot prevents damage from heavyweight GPUs\r\nFan Xpert delivers advanced fan controls for optimized cooling\r\nIndustry-leading 8-channel HD audio driven by Japanese capacitors features an onboard LED-illuminated design Operating System Support Windows 10\r\nSystem Ram Type: Ddr4 Sdram",
 			"mainCategory": "computers",
 			"secondCategory": "motherboards",
-			"pictureUrl": "http://localhost:5500/img/Categories/Computers/Motherboards/3.webp",
+			"pictureUrl": "http://localhost:5500/img/categories/computers/motherboards/3.webp",
 			"addedDate": 1618269019592,
 			"sells": 1
 		}

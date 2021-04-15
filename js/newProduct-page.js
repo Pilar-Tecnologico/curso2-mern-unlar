@@ -93,7 +93,7 @@ function loadPictureBox() {
 }
 
 function loadImages() {
-	let pictureUrl = '../img/Categories/';
+	let pictureUrl = '../img/categories/';
 
 	let index_1 = mainCategorySelect[0].options.selectedIndex;
 	let mainSelection = mainCategorySelect[0].options[index_1].innerHTML;
@@ -105,7 +105,7 @@ function loadImages() {
 
 	var listUrl = [];
 
-	pictureUrl = ReplaceCharacter(pictureUrl, ' ', '-');
+	pictureUrl = ReplaceCharacter(pictureUrl, ' ', '-').toLowerCase();
 
 	for (let index = 1; index < 10; index++) {
 		listUrl.push(`${pictureUrl}${index}.webp`);
@@ -121,8 +121,9 @@ submitBtn.addEventListener('click', (e) => {
 	formData.forEach((data) => {
 		form_data.push(data);
 	});
+	console.log(selectedPicture.src);
 	form_data.push(selectedPicture.src);
-	// str = str.replace(/(?:\r|\n|\r\n)/g, '<br>');
+
 	const new_product = new ProductModel(
 		form_data[0],
 		form_data[1],

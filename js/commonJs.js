@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	$('#navbar-frame').load('/curso-mern-unlar/common/navbar.html');
-	$('.footer-frame').load('/curso-mern-unlar/common/footer.html');
+	$('#navbar-frame').load('../common/navbar.html');
+	$('.footer-frame').load('../common/footer.html');
 });
 
 function ReplaceCharacter(word = '', find_char, replacing_char) {
