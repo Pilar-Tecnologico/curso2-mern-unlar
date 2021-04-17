@@ -135,3 +135,11 @@ body {
 	height: 100%;
 	object-fit: scale-down;
 }
+
+.mern-logo-container {
+	display: inline-block;
+	width: 200px;
+}
+.mern-logo-container img {
+	width: 100%;
+}
