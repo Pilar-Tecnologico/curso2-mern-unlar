@@ -36,7 +36,6 @@ const allProductsByMainCategory =
 
 function showAllproducts() {
 	productDiv[0].innerHTML = '';
-	console.log(allProductsByMainCategory);
 
 	for (let index = 0; index < allProductsByMainCategory.length; index++) {
 		let component = `<div class="product" id="${
@@ -56,7 +55,7 @@ function showAllproducts() {
 					' ' +
 					allProductsByMainCategory[index]['name']
 				}</label>
-        <button class="btn btn-primary">Add to Cart</button>
+        <button class="btn btn-primary" id="cartBtn">Add to Cart</button>
     </div>
 </div>`;
 		productDiv[0].innerHTML += component;

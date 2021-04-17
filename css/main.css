@@ -116,3 +116,22 @@ body {
 	font-size: 1.5rem;
 	color: Dodgerblue;
 }
+
+.navbar .logo-container {
+	height: 60px;
+}
+
+.navbar .logo-container img {
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.navbar .cart-container {
+	height: 100%;
+	width: 60px;
+}
+.navbar .cart-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}

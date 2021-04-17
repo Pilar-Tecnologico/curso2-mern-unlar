@@ -1,7 +1,10 @@
 let dbProducts = [];
 let categories = {};
 function checkDB() {
-	if (localStorage.getItem('dbProducts') == null) {
+	if (
+		localStorage.getItem('dbProducts') == null ||
+		localStorage.getItem('Categories') == null
+	) {
 		createLocalDB();
 	} else {
 		// localStorage.removeItem('dbProducts');
@@ -94,21 +97,15 @@ const getProductsByCategory = (mainCategory = '', secondCategory = '') => {
 				}
 			}
 		}
-		console.log(prod_list);
+
 		return prod_list;
 	} else return 'error';
 };
 
 const getProductById = (id = '') => {
-	console.log(id);
 	let prod = {};
-	for (let index = 0; index < dbProducts.length; index++) {
-		if (dbProducts[index]['id'] == id) {
-			console.log(dbProducts[index]);
-			prod = dbProducts[index];
-			break;
-		}
-	}
+	const ids = getAllProductsId();
+	prod = dbProducts[ids.get(id)];
 
 	return prod;
 };
@@ -173,6 +170,7 @@ const removeProductById = (id = '') => {
 		checkDB();
 	}
 };
+
 export {
 	dbProducts,
 	categories,

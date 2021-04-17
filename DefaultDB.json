@@ -81,5 +81,6 @@
 		],
 		"cameras": ["digital-cameras", "accessories"],
 		"consoles-and-games": ["consoles", "videogames"]
-	}
+	},
+	"cart": []
 }
